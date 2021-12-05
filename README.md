@@ -16,7 +16,7 @@ Note : utilisez des `validator` pour vous assurer que les ssn sont valides (http
 
 # Exercice 2 - Utilisation d'API tierces
 
-Retravaillez l'appel `[GET] personnes` pour qu'il affiche des informations relatives au lieu de naissance.
+Retravaillez l'endpoint `[GET] personnes` pour qu'il affiche des informations relatives au lieu de naissance.
 
 Utilisez le service HTTP et le parsing de fichier :
 
