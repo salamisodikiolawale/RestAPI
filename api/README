@@ -1,0 +1,9 @@
+#Etape 1: BD
+    - docker run -d -p 27017:27017 --name mongodb mongo
+
+#Etape 2: peupler la bd
+    - docker image build -t peuple-bd .
+    - docker run -it --network mynet peuple-bd
+    
+#Etape 3 : creer une image de l'api et un container
+    - docker run -p 8000:8000 -d --network mynet --name my-fast-api  fast-api

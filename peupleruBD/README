@@ -1,0 +1,3 @@
+docker image build -t fast-api .
+docker run -it fast-api
+docker run -it --network mynet fast-api
