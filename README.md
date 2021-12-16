@@ -13,7 +13,7 @@ Faites une API Rest avec FASTAPI qui accède à une base de donnée mongodb afin
 
 Le modèle utilisé, nommé `ModelPersonne`, doit être composé d'un `nom`, `prenom` et `ssn`. Dans le cas de l'endpoint `[POST] personnes`, assurez vous qu'une `HTTPException` soit retournée lorsque le numéro ssn fourni est déjà enregistré.
 
-**Indications** : vous utiliserez deux conteneurs, le premier remplira la base de donnée (cf. précédent TD), le second exposera l'API Rest sur le port 3000. Il est attendu que votre modèle soit défini dans une fichier `model_personne.py`, votre application RestAPI soit définie dans un fichier `app.py`, la logique associée au parsing de ssn soit contenu dans un fichier `ssn_parser.py`.
+**Indications** : vous utiliserez deux conteneurs, le premier remplira la base de donnée (cf. précédent TD), le second exposera l'API Rest sur le port 3000. Il est attendu que votre modèle soit défini dans un fichier `model_personne.py`, que votre application RestAPI soit définie dans un fichier `app.py`, et que la logique associée au parsing de ssn soit contenu dans un fichier `ssn_parser.py`.
 
 **Note** : utilisez des `validator` pour vous assurer que le ssn du modèle est valide (https://pydantic-docs.helpmanual.io/usage/validators/).
 
